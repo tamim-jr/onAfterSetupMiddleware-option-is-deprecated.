@@ -6,8 +6,10 @@ DeprecationWarning Solution:
 [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 
 'onBeforeSetupMiddleware'option is deprecated. Please use the 'setupMiddlewares' option.
 
-Error code like this:
+Follow this:
+Go React Project file(my-app)> node_modile>react-scripts>config>webpackDevServer.config.js>then change this way:
 
+Error code like this:
 onBeforeSetupMiddleware(devServer) {
     // Keep `evalSourceMapMiddleware`
     // middlewares before `redirectServedPath` otherwise will not have any effect
